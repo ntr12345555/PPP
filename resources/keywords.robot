@@ -13,3 +13,6 @@ End Test
 Login Details
     input text  ${uname}  ${usename}
     input text  ${pword}  ${upword}
+
+
+

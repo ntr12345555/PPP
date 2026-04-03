@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.2 (Python 3.12.3 on win32)" generated="2026-04-02T10:52:42.808119" rpa="false" schemaversion="5">
+<suite id="s1" name="Regression" source="C:\Users\Praveen\PycharmProjects\PPP\test_suite\regression.robot">
+<kw name="Start Test" owner="keywords" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-04-02T10:52:43.644712" level="INFO">Opening browser 'chrome' to base url 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login'.</msg>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-04-02T10:52:43.644712" elapsed="35.643943"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-04-02T10:53:23.356134" level="INFO">Slept 4 seconds.</msg>
+<arg>4</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-04-02T10:53:19.288655" elapsed="4.069491"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-04-02T10:53:23.363917" elapsed="0.808086"/>
+</kw>
+<status status="PASS" start="2026-04-02T10:52:43.641739" elapsed="40.532274"/>
+</kw>
+<test id="s1-t1" name="Enter User Details" line="10">
+<kw name="Login Details" owner="keywords">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-04-02T10:53:24.180043" level="INFO">Typing text 'admin' into text field '//input[@name="username"]'.</msg>
+<arg>${uname}</arg>
+<arg>${usename}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-04-02T10:53:24.176023" elapsed="0.314120"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-04-02T10:53:24.492152" level="INFO">Typing text 'admin123' into text field '//input[@name="password"]'.</msg>
+<arg>${pword}</arg>
+<arg>${upword}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-04-02T10:53:24.490143" elapsed="0.306748"/>
+</kw>
+<status status="PASS" start="2026-04-02T10:53:24.176023" elapsed="0.620868"/>
+</kw>
+<doc>validate log in</doc>
+<status status="PASS" start="2026-04-02T10:53:24.174013" elapsed="0.627804"/>
+</test>
+<kw name="End Test" owner="keywords" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-04-02T10:53:24.803826" elapsed="1.100025"/>
+</kw>
+<status status="PASS" start="2026-04-02T10:53:24.803826" elapsed="1.100025"/>
+</kw>
+<status status="PASS" start="2026-04-02T10:52:42.815487" elapsed="43.088364"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Regression" id="s1" pass="1" fail="0" skip="0">Regression</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
